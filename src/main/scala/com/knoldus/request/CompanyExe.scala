@@ -1,0 +1,16 @@
+package com.knoldus.request
+import com.knoldus.models.Company
+import com.knoldus.validator.CompanyValidator
+
+class CompanyExe(companyValidator: CompanyValidator) {
+  def createCompany(company: Company): Option[String] = {
+    if (companyValidator.companyIsValid(company)) {
+      println("=>Company ='"+company.name+"' is created successfully!")
+      Option(company.name)
+    }
+    else{
+      println("=>Company ='"+company.name+"' can not be not created")
+      None
+    }
+  }
+}

@@ -8,8 +8,6 @@ class CompanyDataTest extends AnyFunSuite{
     val comName = "Knoldus"
     val result = companyDataObj.getCompanyByName(comName)
     assert(result.isDefined)
-    //    val expectedResult = true
-    //    assert(result.isDefined == expectedResult)
   }
 
   test("Company should not exist in DB "){

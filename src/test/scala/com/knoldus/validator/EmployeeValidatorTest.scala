@@ -8,7 +8,7 @@ import org.mockito.MockitoSugar.{mock, when}
 import org.scalatest.funsuite.AnyFunSuite
 
 class EmployeeValidatorTest extends AnyFunSuite{
-  val employee = new Employee("Rahul","Soni",22,15000,"Intern","knoldus","rahul.soni@knoldus.com")
+  val employee = new Employee("Shivam","Saxena",22,12000,"Intern","knoldus","shivam.saxena@knoldus.com")
   val knoldusCompany: Company = Company("Knoldus", "knoldus@gmail.com", "Noida")
   val companyRead = mock[CompanyData]
   val emailValidator = mock[EmailValidator]
